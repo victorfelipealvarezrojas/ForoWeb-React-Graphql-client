@@ -1,0 +1,32 @@
+.section.no-margin {
+    margin-bottom: 0;
+}
+
+.blue{
+  background: #176EB7;
+  height: 100vh;
+}
+
+.hero {
+  background: #176EB7;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.hero-inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 0;
+}

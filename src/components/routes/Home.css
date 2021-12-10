@@ -1,0 +1,70 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 0.7fr 0.9fr 1.5fr 0.9fr;
+    grid-template-rows: 2.75rem 3fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "sidebar leftmenu content rightmenu";
+    gap: 0.75rem 0.4rem;
+  }
+
+  .navigation {
+    grid-area: nav;
+    background-color: rgb(250, 244, 189);
+    border-color: rgb(231, 225, 165);
+  }
+
+  .sidebar {
+    min-height: var(--min-screen-height);
+    grid-area: sidebar;
+    background-color: rgb(189, 221, 250);
+    border-top: var(--border);
+    border-right: var(--border);
+    border-color:rgb(108, 183, 253); 
+  }
+
+  .leftmenu {
+    grid-area: leftmenu;
+  }
+
+  .content {
+    min-height: var(--min-screen-height);
+    grid-area: content;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+  }
+
+  .rightmenu {
+    grid-area: rightmenu;
+  }
+
+  .category{
+    color: black;
+    padding: 0.75em;
+    padding-left: 0.5em;
+    font-size: 20;
+    font-weight: bold;
+    text-decoration: unset;
+  }
+
+  .category:hover{
+    color: rgb(53, 89, 122);
+    background-color: rgb(155, 189, 219);
+    box-shadow: 2px 2px 5px #999;
+    color: white;
+    
+  }
+
+
+
+
+
+
+
+  @media screen and (orientation: portrait) and (max-width: 768px) {
+    .home-container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "nav"
+        "content";
+    }
+  }
